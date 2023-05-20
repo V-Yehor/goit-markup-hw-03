@@ -44,6 +44,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Стилізація Контейнерів */
@@ -52,9 +54,23 @@ img {
   width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
-  border: 1px solid tomato;
+  /* border: 1px solid tomato; */
 }
 /* Стилізація Header */
+.header-container {
+  display: flex;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  min-height: 72px;
+  padding: 24px 0;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+}
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -64,6 +80,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-accent-color);
+  margin-right: 76px;
 }
 
 .logo-aсcent,
@@ -74,6 +91,11 @@ img {
 .header-logo:hover,
 .header-logo:focus {
   color: var(--active-color);
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-link {
@@ -91,6 +113,12 @@ img {
 
 .adress {
   font-style: normal;
+  margin-left: auto;
+}
+
+.adress-list {
+  display: flex;
+  gap: 40px;
 }
 
 .adress-contact-link {
@@ -113,7 +141,7 @@ img {
 }
 
 .hero-title {
-  margin-top: 188px;
+  padding-top: 188px;
   margin-bottom: 64px;
   font-size: 56px;
   line-height: 1.07;
@@ -151,6 +179,15 @@ img {
   padding: 120px 0;
 }
 
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-item {
+  width: calc((100%-72px) / 4);
+}
+
 .features-sub-title {
   margin-bottom: 8px;
   font-weight: 500;
@@ -172,6 +209,15 @@ img {
   margin-bottom: 120px;
 }
 
+.works-list {
+  display: flex;
+  gap: 24px;
+}
+
+.works-item {
+  width: calc((100%-48px) / 3);
+}
+
 .works-title {
   margin-bottom: 72px;
   font-size: 36px;
@@ -187,6 +233,14 @@ img {
   background-color: #f4f4fd;
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+.team-item {
+  width: calc((100%-72px) / 4);
 }
 
 .team-title {
@@ -206,12 +260,14 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--second-main-color);
+  text-align: center;
 }
 
 .team-text {
   font-size: var(--main-font-size);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .team-item {
@@ -255,6 +311,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
 
 /* Стилізація Portfolio */
@@ -275,6 +332,9 @@ img {
 } */
 
 .btn-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
   margin-top: 96px;
   margin-bottom: 72px;
 }
@@ -291,6 +351,7 @@ img {
   letter-spacing: 0.04em;
   background-color: #f4f4fd;
   color: #4d5ae5;
+  border: 1px solid #e7e9fc;
   cursor: pointer;
 }
 
@@ -306,14 +367,21 @@ img {
   margin-bottom: 120px;
 }
 
+.portfolio-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
 .portfolio-list-item {
   background: #ffffff;
-  border: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  width: 360px;
+  max-width: calc((100%-48px) / 3);
 }
 
 .text-container {
-  margin: 32px 0;
-  padding: 0 16px;
+  padding: 32px 16px;
 }
 
 .portfolio-subtitle {
