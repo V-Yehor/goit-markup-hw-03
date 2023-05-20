@@ -259,6 +259,8 @@ img {
 
 /* Стилізація Portfolio */
 
+/* стилізація заголовку Portfolio */
+
 .portfolio-title {
   font-size: 56px;
   line-height: 1.07;
@@ -267,7 +269,13 @@ img {
   color: var(--second-main-color);
 }
 
+/* Стилізація фільтрів сторінки Portfolio */
+
+/* .btn-wrapper {
+} */
+
 .btn-list {
+  margin-top: 96px;
   margin-bottom: 72px;
 }
 
@@ -292,7 +300,24 @@ img {
   color: #ffffff;
 }
 
+/* Стилізація контенту сторінки Portfolio */
+
+.portfolio-wrapper {
+  margin-bottom: 120px;
+}
+
+.portfolio-list-item {
+  background: #ffffff;
+  border: 1px solid #e7e9fc;
+}
+
+.text-container {
+  margin: 32px 0;
+  padding: 0 16px;
+}
+
 .portfolio-subtitle {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
