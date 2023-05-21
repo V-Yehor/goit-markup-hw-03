@@ -64,12 +64,11 @@ img {
 .header {
   border-bottom: 1px solid #e7e9fc;
   min-height: 72px;
-  padding: 24px 0;
 }
 
 .header-nav {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .header-logo {
@@ -96,6 +95,7 @@ img {
 .header-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .header-link {
@@ -119,6 +119,7 @@ img {
 .adress-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .adress-contact-link {
@@ -137,25 +138,26 @@ img {
 
 .hero {
   background-color: var(--second-main-color);
-  text-align: center;
+  padding: 188px 0;
 }
 
 .hero-title {
-  padding-top: 188px;
-  margin-bottom: 64px;
+  margin: 0px auto 48px;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  max-width: 496px;
   color: #ffffff;
 }
 
 .hero-btn {
-  display: inline-block;
+  display: block;
   border-radius: 4px;
   min-width: 169px;
+  height: 56px;
   padding: 16px 32px;
-  margin-bottom: 188px;
+  margin: 0 auto;
   font-family: inherit;
   font-weight: 500;
   font-size: var(--main-font-size);
@@ -165,6 +167,7 @@ img {
   color: #ffffff;
   background-color: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   cursor: pointer;
 }
 
@@ -206,7 +209,7 @@ img {
 /* Стилізація Works */
 
 .section-works {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .works-list {
@@ -241,6 +244,7 @@ img {
 }
 .team-item {
   width: calc((100%-72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -286,6 +290,8 @@ img {
 }
 
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -306,7 +312,6 @@ img {
 }
 
 .footer-text {
-  margin-top: 16px;
   font-size: var(--main-font-size);
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -328,6 +333,10 @@ img {
 
 /* Стилізація фільтрів сторінки Portfolio */
 
+.portfolio-section {
+  padding: 96px 0 120px;
+}
+
 /* .btn-wrapper {
 } */
 
@@ -335,7 +344,6 @@ img {
   display: flex;
   gap: 24px;
   justify-content: center;
-  margin-top: 96px;
   margin-bottom: 72px;
 }
 
@@ -362,10 +370,6 @@ img {
 }
 
 /* Стилізація контенту сторінки Portfolio */
-
-.portfolio-wrapper {
-  margin-bottom: 120px;
-}
 
 .portfolio-list {
   display: flex;
