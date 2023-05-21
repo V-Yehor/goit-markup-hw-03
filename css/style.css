@@ -389,12 +389,13 @@ img {
 .portfolio-list {
   display: flex;
   gap: 24px;
+  row-gap: 48px;
   flex-wrap: wrap;
 }
 
 .portfolio-list-item {
   background: #ffffff;
-  border-bottom: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
   width: 360px;
   max-width: calc((100%-48px) / 3);
 }
